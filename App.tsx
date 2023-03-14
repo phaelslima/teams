@@ -8,6 +8,8 @@ import {
 
 import { Loading } from '@components/Loading'
 
+import { Groups } from '@screens/Groups'
+
 import { defaultTheme } from '@theme/default'
 
 export default function App() {
@@ -19,7 +21,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <View /> : <Loading />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   )
 }
