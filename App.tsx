@@ -7,8 +7,7 @@ import {
 } from '@expo-google-fonts/roboto'
 
 import { Loading } from '@components/Loading'
-
-import { Players } from '@screens/Players'
+import { Routes } from '@routes'
 
 import { defaultTheme } from '@theme/default'
 
@@ -21,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   )
 }
